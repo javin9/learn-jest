@@ -1,0 +1,55 @@
+{
+  "name": "trade-toolkit",
+  "version": "0.2.3-beta.7",
+  "description": "Trade Toolkit",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "precommit": "lint-staged",
+    "publish:release": "standard-version",
+    "publish:minor": "standard-version --release-as minor",
+    "publish:major": "standard-version --release-as major",
+    "publish:beta": "standard-version --prerelease beta",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint --fix --ext .js,.ts,.tsx ./src",
+    "format": "prettier-eslint --write \"src/**/*.js\""
+  },
+  "files": [
+    "src",
+    "dist",
+    "README.md",
+    "package.json",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "tool",
+    "trade"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "jest": "^27.4.0",
+    "jest-environment-jsdom": "^27.4.3",
+    "jest-environment-jsdom-global": "^3.0.0",
+    "jest-location": "workspace:^0.1.2-beta.0",
+    "prettier": "^2.5.1",
+    "prettier-eslint-cli": "^5.0.1",
+    "pretty-quick": "^3.1.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "pretty-quick --write",
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

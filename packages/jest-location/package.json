@@ -1,0 +1,41 @@
+{
+  "name": "jest-location",
+  "version": "0.1.2-beta.0",
+  "description": "mock fake location",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "publish:release": "standard-version",
+    "publish:minor": "standard-version --release-as minor",
+    "publish:major": "standard-version --release-as major",
+    "publish:beta": "standard-version --prerelease beta",
+    "test": "jest",
+    "build": "node ./scripts/build.js"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "jest",
+    "trade"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.0",
+    "esbuild": "^0.14.1",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "jest": "^27.4.0"
+  }
+}

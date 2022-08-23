@@ -1,0 +1,12 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "----------pre commit hook started-----------"
+
+# run jest test 
+pnpm test -r
+
+# run lint-staged , if your project has lint-staged
+pnpm run precommit -r
+
+echo "----------pre commit hook finished----------"

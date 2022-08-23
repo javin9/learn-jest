@@ -1,0 +1,17 @@
+{
+  "name": "jest-jsdom-env",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.0",
+    "jest-environment-jsdom": "^27.4.3",
+    "jest-environment-jsdom-global": "^3.0.0"
+  }
+}

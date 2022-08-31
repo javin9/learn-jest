@@ -1,21 +1,9 @@
 # Jest 入门
+[Jest官网](https://jestjs.io/)
 
-## Start
-
-- install pnpm：https://pnpm.io/zh/installation
-
-```
-npm install -g pnpm
-```
-
-- install dependencies
-
-```
-pnpm install
-```
-
-- run scripts
-
-```
-pnpm run [test|build|start]
-```
+### 2-2
+前端框架
+- Jasmine
+- 
+### 2-3
+npm i jest -D   
